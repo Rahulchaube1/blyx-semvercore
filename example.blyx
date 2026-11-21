@@ -1,0 +1,13 @@
+use semvercore;
+
+fn main() {
+    let left = [1, 10, 0];
+    let right = [1, 2, 9];
+    let result = semvercore_compare(left, right);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
